@@ -4,7 +4,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.keymap.set({ 'i', 'n' }, '<C-s>', '<cmd>w<CR>')
+vim.keymap.set({ 'i', 'n' }, '<C-s>', '<Esc><cmd>w<CR>')
+vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<CR>')
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
