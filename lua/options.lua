@@ -4,10 +4,10 @@
 --  For more options, you can see `:help option-list`
 
 -- tabs & indentation
-opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
-opt.autoindent = true -- copy indent from current line when starting new one
+vim.opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
+vim.opt.shiftwidth = 2 -- 2 spaces for indent width
+vim.opt.expandtab = true -- expand tab to spaces
+vim.opt.autoindent = true -- copy indent from current line when starting new one
 
 -- Make line numbers default
 vim.opt.number = true
