@@ -156,7 +156,10 @@ return {
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        html = {},
+        html = {
+          filetypes = {'html','typescriptreact'}
+        },
+        ts_ls = {},
         -- clangd = {},
         -- gopls = {},
         -- pyright = {},
@@ -167,7 +170,6 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {},
         --
 
         lua_ls = {
